@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+body {
+  background-image: url("images/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin: 20px;
+}
+
+h1 {
+  font-family: "Permanent Marker", cursive;
+  font-size: 8em;
+  color: #0A100D;
+  text-align: center;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.flexlayout {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.flexnav {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0px;
+  margin: 2px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 1.5em;
+  width: 200px;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.flexnav a:link, .flexnav a:visited {
+  background-color: #902923;
+  color: #D6D5C9;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.flexnav a:hover, .flexnav a:active {
+  background-color: #A22C29;
+}
+
+.flexnav .navlink {
+  border: 1px solid #0A100D;
+  text-align: center;
+  padding: 5px;
+  width: 200px;
+}
+
+.flexmain {
+  background-color: #B9BAA3;
+  background-image: radial-gradient(#00ee4f, #B9BAA3);
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #0A100D;
+  color: #0A100D;
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #A22C29;
+}
+
+.accordion-button {
+  color: #D6D5C9;
+}
+
+.accordion-button {
+  background-color: #902923;
+}
+
+.splashimg {
+  width: 300px;
+  text-align: center;
+}
+
+.desktop, .mobile {
+  display: none;
+}
+
+@media (orientation: landscape) {
+  .desktop {
+    display: inline-block;
+  }
+}
+
+@media (orientation: portrait) {
+  .mobile {
+    display: inline-block;
+  }
+}
+/*# sourceMappingURL=mobile.css.map */
