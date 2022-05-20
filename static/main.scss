@@ -3,11 +3,7 @@
 @import "rules";
 
 body {
-    background-image: url("images/bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    margin: 20px;
+    @include body;
 }
 
 h1 {
@@ -15,57 +11,18 @@ h1 {
 }
 
 .flexlayout {
-    display: flex;
-    margin: 0px;
-    padding: 0px;
+    @include flexlayout;
+    flex-direction: row;
 }
 
 .flexnav {
+    @include flexnav;
     flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    padding: 0px;
-    margin: 2px;
-    align-items: center;
-    font-family: $headFont;
-    font-size: 1.5em;
-    width: 200px;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
-    align-self: flex-start;
-
-    a:link, a:visited {
-        background-color: $color5;
-        color: $color3;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-    }
-
-    a:hover, a:active {
-        background-color: $color4;
-    }
-
-    .navlink {
-        border: 1px solid $color1;
-        text-align: center;
-        padding: 5px;
-        width: 200px;
-    }
 }
 
 .flexmain {
-    background-color: $color2;
-    background-image: radial-gradient(white, $color2);
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 1px solid $color1;
-    color: $color1;
-    font-family: $contentFont;
-    width: 100%;
+    @include flexmain;
 }
-
 
 .accordion-button:not(.collapsed) {
     background-color: $color4;
@@ -82,20 +39,4 @@ h1 {
 .splashimg {
     width:300px;
     text-align: center;
-}
-
-.desktop, .mobile {
-    display: none;
-}
-
-@media (orientation: landscape) {
-    .desktop {
-        display: inline-block;
-    }
-}
-
-@media (orientation: portrait) {
-    .mobile {
-        display: inline-block;
-    }
 }
