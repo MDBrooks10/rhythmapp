@@ -33,7 +33,7 @@ h1 {
   padding: 0px;
   margin: 2px;
   font-family: "Permanent Marker", cursive;
-  font-size: 1.5em;
+  font-size: 10%;
   width: 195px;
   padding: 5px;
   position: -webkit-sticky;
@@ -42,22 +42,25 @@ h1 {
   top: 0;
   -ms-flex-item-align: start;
       align-self: flex-start;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
+      -ms-flex-flow: row;
+          flex-flow: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  min-width: 600px;
 }
 
 .flexnav a:link, .flexnav a:visited {
   background-color: #902923;
   color: #D6D5C9;
+  text-align: center;
   text-decoration: none;
+  display: inline-block;
 }
 
 .flexnav a:hover, .flexnav a:active {

@@ -25,6 +25,7 @@ $contentFont: 'Montserrat', sans-serif;
     margin: 2px;
     font-family: $headFont;
     font-size: 1.5em;
+    font-size: 10%;
     width: 195px;
     padding: 5px;
     position: -webkit-sticky; /* Safari */
@@ -35,9 +36,9 @@ $contentFont: 'Montserrat', sans-serif;
     a:link, a:visited {
         background-color: $color5;
         color: $color3;
-        // text-align: center;
+        text-align: center;
         text-decoration: none;
-        // display: inline-block;
+        display: inline-block;
     }
 
     a:hover, a:active {
