@@ -17,8 +17,14 @@ h1 {
 
 .flexnav {
     @include flexnav;
-    flex-flow: row wrap;
-    justify-content: space-around;
+    flex-flow: column;
+    justify-content: space-between;
+    display: flex;
+
+        #logo {
+            order: -1;
+            flex: 1 0 100%;
+        }
 }
 
 .flexmain {

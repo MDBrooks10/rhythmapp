@@ -18,6 +18,11 @@ h1 {
 .flexnav {
     @include flexnav;
     flex-direction: column;
+
+    .navlink {
+    width: 195px;
+    }
+    
 }
 
 .flexmain {

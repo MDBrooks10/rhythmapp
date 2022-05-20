@@ -30,18 +30,11 @@ h1 {
 }
 
 .flexnav {
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   padding: 0px;
   margin: 2px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   font-family: "Permanent Marker", cursive;
   font-size: 1.5em;
-  width: 192px;
+  width: 195px;
   position: -webkit-sticky;
   /* Safari */
   position: sticky;
@@ -70,7 +63,15 @@ h1 {
   border: 1px solid #0A100D;
   text-align: center;
   padding: 0px;
-  width: 192px;
+}
+
+.flexnav #logo {
+  width: 195px;
+  height: 195px;
+}
+
+.flexnav .navlink {
+  width: 195px;
 }
 
 .flexmain {
