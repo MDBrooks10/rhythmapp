@@ -8,6 +8,10 @@ body {
   margin: 20px;
 }
 
+.flexnavb {
+  display: none;
+}
+
 h1 {
   font-family: "Permanent Marker", cursive;
   font-size: 8em;
@@ -51,7 +55,9 @@ h1 {
 .flexnav a:link, .flexnav a:visited {
   background-color: #902923;
   color: #D6D5C9;
+  text-align: center;
   text-decoration: none;
+  display: inline-block;
 }
 
 .flexnav a:hover, .flexnav a:active {
@@ -71,6 +77,11 @@ h1 {
 
 .flexnav .navlink {
   width: 195px;
+}
+
+.flexnav .navlink a {
+  font-size: 1.5em;
+  font-family: "Permanent Marker", cursive;
 }
 
 .flexmain {

@@ -16,16 +16,22 @@ h1 {
 }
 
 .flexnav {
-    @include flexnav;
-    flex-flow: row;
-    justify-content: space-between;
-    display: flex;
-    min-width: 600px;
+    display: none;
+}
 
-        #logo {
-            order: -1;
-            flex: 1 0 100%;
-        }
+.flexnavb {
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        background-color: $color5;
+        color: $color3;
+        font-family: $headFont;
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        display: inline-block;
+    }
 }
 
 .flexmain {

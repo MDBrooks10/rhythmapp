@@ -30,61 +30,26 @@ h1 {
 }
 
 .flexnav {
-  padding: 0px;
-  margin: 2px;
-  font-family: "Permanent Marker", cursive;
-  font-size: 10%;
-  width: 195px;
-  padding: 5px;
-  position: -webkit-sticky;
-  /* Safari */
-  position: sticky;
-  top: 0;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: none;
+}
+
+.flexnavb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-width: 600px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.flexnav a:link, .flexnav a:visited {
+.flexnavb a {
   background-color: #902923;
   color: #D6D5C9;
+  font-family: "Permanent Marker", cursive;
   text-align: center;
   text-decoration: none;
+  padding: 10px;
   display: inline-block;
-}
-
-.flexnav a:hover, .flexnav a:active {
-  background-color: #A22C29;
-}
-
-.flexnav .navlink {
-  border: 1px solid #0A100D;
-  text-align: center;
-  padding: 0px;
-}
-
-.flexnav #logo {
-  width: 195px;
-  height: 195px;
-}
-
-.flexnav #logo {
-  -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-          order: -1;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 100%;
-          flex: 1 0 100%;
 }
 
 .flexmain {
